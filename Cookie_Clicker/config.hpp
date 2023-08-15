@@ -16,7 +16,7 @@ struct GameDate
 	int pr_level;
 	int ice_level;
 	int shop_level;
-	int per_product_output;
+	long long per_product_output;
 	String last_login_time;
 };
 

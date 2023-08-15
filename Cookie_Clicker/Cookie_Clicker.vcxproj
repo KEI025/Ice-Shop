@@ -119,6 +119,7 @@
     <ClCompile Include="button.hpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="save_date_writer.cpp" />
     <ClCompile Include="save_date_loader.cpp" />
     <ClCompile Include="star.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -323,6 +324,7 @@
     <ClInclude Include="config.hpp" />
     <ClInclude Include="game.hpp" />
     <ClInclude Include="save_date_loader.hpp" />
+    <ClInclude Include="save_date_writer.hpp" />
     <ClInclude Include="star.hpp" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>

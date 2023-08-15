@@ -162,6 +162,9 @@
     <ClCompile Include="save_date_loader.cpp">
       <Filter>Source Files\features</Filter>
     </ClCompile>
+    <ClCompile Include="save_date_writer.cpp">
+      <Filter>Source Files\features</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -804,6 +807,9 @@
       <Filter>Source Files\features</Filter>
     </ClInclude>
     <ClInclude Include="save_date_loader.hpp">
+      <Filter>Source Files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="save_date_writer.hpp">
       <Filter>Source Files\features</Filter>
     </ClInclude>
   </ItemGroup>

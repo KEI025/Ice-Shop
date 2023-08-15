@@ -14,6 +14,9 @@ public:
 	void draw() const override;
 
 private:
+	double sales_time;
+	double accumulator = 0.0;
+	Effect effect;
 	Array<Star> stars;
 	SaveDateLoader loader;
 };

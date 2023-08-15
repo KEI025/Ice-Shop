@@ -16,6 +16,8 @@ Game::Game(const InitData& init)
 		getData().per_product_output = save.per_product_output;
 		getData().last_login_time = save.last_login_time;
 
+		sales_time = 60.0 / getData().per_product_output;
+
 		//TODO : 最終ログイン日時からの経過時間に応じて放置報酬を与える
 		//TODO : GameDateのlast_login_timeをDate型に変換して計算
 		{
@@ -26,12 +28,20 @@ Game::Game(const InitData& init)
 
 void Game::update() {
 
+	accumulator += Scene::DeltaTime();
+
 	for (auto& star : stars) {
 		star.update();
+	}
+
+	if (sales_time <= accumulator) {
+		accumulator -= sales_time;
+		getData().ice_num += getData().per_product_output / 60;
 	}
 }
 
 void Game::draw() const {
+
 
 	//夜空のグラデーションと星描画
 	{
@@ -47,5 +57,6 @@ void Game::draw() const {
 	//合計生産数と分あたりの生産数表示
 	{
 		FontAsset(U"60")(getData().ice_num).drawAt({ kWindowSize.x * 0.25 , kWindowSize.y * 0.3 });
+		FontAsset(U"25")(U"アイスの販売数 : " + ToString(getData().per_product_output) + U"個/分").drawAt({kWindowSize.x * 0.25 , kWindowSize.y * 0.45});
 	}
 }
