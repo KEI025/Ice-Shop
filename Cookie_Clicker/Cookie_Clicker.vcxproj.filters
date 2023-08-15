@@ -165,6 +165,9 @@
     <ClCompile Include="save_date_writer.cpp">
       <Filter>Source Files\features</Filter>
     </ClCompile>
+    <ClCompile Include="button.cpp">
+      <Filter>Source Files\features</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">

@@ -14,8 +14,10 @@ void Main()
 	TextureAsset::Register(U"ice-4", U"imgs/ice-4.png");
 	TextureAsset::Register(U"ice-5", U"imgs/ice-5.png");
 
-	FontAsset::Register(U"60" ,FontMethod::Bitmap, 60, U"example/font/DotGothic16/DotGothic16-Regular.ttf");
+	FontAsset::Register(U"70" ,FontMethod::Bitmap, 70, U"example/font/DotGothic16/DotGothic16-Regular.ttf");
+	FontAsset::Register(U"40", FontMethod::Bitmap, 40, U"example/font/DotGothic16/DotGothic16-Regular.ttf");
 	FontAsset::Register(U"25", FontMethod::Bitmap, 25, U"example/font/DotGothic16/DotGothic16-Regular.ttf");
+	FontAsset::Register(U"18", FontMethod::Bitmap, 20, U"example/font/DotGothic16/DotGothic16-Regular.ttf");
 
 	App manager;
 

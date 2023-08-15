@@ -116,6 +116,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="button.cpp" />
     <ClCompile Include="button.hpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="Main.cpp" />

@@ -38,6 +38,23 @@ void Game::update() {
 		accumulator -= sales_time;
 		getData().ice_num += getData().per_product_output / 60;
 	}
+
+	if (pr_update_btn.IsClick()) {
+		getData().pr_level++;
+		pr_update_btn.updateLevel(getData().pr_level);
+	}
+	if (ice_update_btn.IsClick()) {
+		getData().ice_level++;
+		ice_update_btn.updateLevel(getData().ice_level);
+	}
+	if (shop_update_btn.IsClick()) {
+		getData().shop_level++;
+		shop_update_btn.updateLevel(getData().shop_level);
+	}
+
+	pr_update_btn.update();
+	ice_update_btn.update();
+	shop_update_btn.update();
 }
 
 void Game::draw() const {
@@ -56,9 +73,13 @@ void Game::draw() const {
 
 	//合計生産数と分あたりの生産数表示
 	{
-		FontAsset(U"60")(getData().ice_num).drawAt({ kWindowSize.x * 0.25 , kWindowSize.y * 0.3 });
+		FontAsset(U"70")(getData().ice_num).drawAt({ kWindowSize.x * 0.25 , kWindowSize.y * 0.3 });
 		FontAsset(U"25")(U"アイスの販売数 : " + ToString(getData().per_product_output) + U"個/分").drawAt({kWindowSize.x * 0.25 , kWindowSize.y * 0.45});
 	}
+
+	pr_update_btn.draw();
+	ice_update_btn.draw();
+	shop_update_btn.draw();
 }
 Game::~Game()
 {
