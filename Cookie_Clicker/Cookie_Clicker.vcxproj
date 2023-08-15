@@ -327,6 +327,7 @@
     <ClInclude Include="save_date_writer.hpp" />
     <ClInclude Include="star.hpp" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="yyyymmddhhmmss.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App\example\obj\blacksmith.obj">

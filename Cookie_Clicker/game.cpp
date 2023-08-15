@@ -20,11 +20,11 @@ Game::Game(const InitData& init)
 
 		//TODO : 最終ログイン日時からの経過時間に応じて放置報酬を与える
 		//TODO : GameDateのlast_login_timeをDate型に変換して計算
+		//TODO : 放置報酬を表示するclassを別に作って実装する(geme classが複雑化するため)
 		{
 
 		}
-	}
-
+}
 
 void Game::update() {
 
@@ -59,4 +59,12 @@ void Game::draw() const {
 		FontAsset(U"60")(getData().ice_num).drawAt({ kWindowSize.x * 0.25 , kWindowSize.y * 0.3 });
 		FontAsset(U"25")(U"アイスの販売数 : " + ToString(getData().per_product_output) + U"個/分").drawAt({kWindowSize.x * 0.25 , kWindowSize.y * 0.45});
 	}
+}
+Game::~Game()
+{
+	YYYYMMSSHHMMSS time;
+
+	getData().last_login_time = time.get();
+
+	writer.Write(getData());
 }

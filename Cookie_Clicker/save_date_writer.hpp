@@ -3,6 +3,8 @@
 
 class SaveDateWriter {
 
+public :
+
 	SaveDateWriter();
 
 	void Write(const GameDate date);

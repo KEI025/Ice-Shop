@@ -1,8 +1,8 @@
-{
-    "ice_num" : 0,
-    "pr_level" : 1,
-    "ice_level" : 1,
-    "shop_level" : 1,
-    "per_product_output" : 90,
-    "last_login_time" : "2023-08-13 23:38"
+﻿{
+  "ice_level": 1,
+  "ice_num": 559,
+  "last_login_time": "20230815190546",
+  "per_product_output": 90,
+  "pr_level": 1,
+  "shop_level": 1
 }

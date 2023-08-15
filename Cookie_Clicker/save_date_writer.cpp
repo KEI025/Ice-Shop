@@ -1,5 +1,8 @@
 ﻿#include "save_date_writer.hpp"
 
+SaveDateWriter::SaveDateWriter(){
+}
+
 void SaveDateWriter::Write(const GameDate date){
 
 	JSON json;

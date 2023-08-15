@@ -812,5 +812,8 @@
     <ClInclude Include="save_date_writer.hpp">
       <Filter>Source Files\features</Filter>
     </ClInclude>
+    <ClInclude Include="yyyymmddhhmmss.hpp">
+      <Filter>Source Files\features</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
