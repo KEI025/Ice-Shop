@@ -818,5 +818,8 @@
     <ClInclude Include="yyyymmddhhmmss.hpp">
       <Filter>Source Files\features</Filter>
     </ClInclude>
+    <ClInclude Include="buff_item.hpp">
+      <Filter>Source Files\features</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

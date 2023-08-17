@@ -41,6 +41,7 @@ void Game::update() {
 
 	if (pr_update_btn.IsClick()) {
 		getData().pr_level++;
+		getData().ice_num = getData().ice_num;
 		pr_update_btn.updateLevel(getData().pr_level);
 	}
 	if (ice_update_btn.IsClick()) {
